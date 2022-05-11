@@ -10,6 +10,9 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import abc123.gmail.tabbedactivity2.R;
 import abc123.gmail.tabbedactivity2.fragment.Fragment1;
+import abc123.gmail.tabbedactivity2.fragment.Fragment2;
+import abc123.gmail.tabbedactivity2.fragment.Fragment3;
+import abc123.gmail.tabbedactivity2.fragment.Fragment4;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -39,13 +42,13 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 fragment = new Fragment1();
                 break;
             case 1:
-                fragment = PlaceholderFragment.newInstance(position + 1);
+                fragment = new Fragment2();
                 break;
             case 2:
-                fragment = PlaceholderFragment.newInstance(position + 1);
+                fragment = new Fragment3();
                 break;
             case 3:
-                fragment = PlaceholderFragment.newInstance(position + 1);
+                fragment = new Fragment4();
                 break;
         }
         return fragment;
